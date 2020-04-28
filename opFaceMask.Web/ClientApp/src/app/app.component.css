@@ -1,0 +1,4 @@
+.container, #map {
+    height: 100vh;
+    display: absolute !important;
+}
