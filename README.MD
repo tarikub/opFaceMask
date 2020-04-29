@@ -1,12 +1,17 @@
-<img  src="hackathon-image.jpg" alt="Twilio Dev Hackathon"  />
+  <img  src="hackathon-image.jpg" alt="Twilio Dev Hackathon"  />
  
 # SMS Powered Realtime COVID-19 Mask Donation Drive tracker 
 
 ## About
 
-This application provides the ability for users to run grassroots donation drives for coordinating home-made and donated face masks as part of the effort to curb the spread of COVID-19 virus. Users can control their campaigns by sending text messages to a designated auto-provisioned Twilio number and start receiving and distributing face masks.
+This application provides the ability for users to run grassroots donation drives for coordinating home-made and donated face masks as part of the effort to curb the spread of COVID-19 virus. Users can control their donation drives by sending text messages to a designated auto-provisioned Twilio number and start receiving and distributing face masks.
 
 >This is a sample application developed for [Twilio x DEV community hackathon](https://dev.to/devteam/announcing-the-twilio-hackathon-on-dev-2lh8). 
+
+## Twilio APIs Used
+* Programmable SMS
+  * Twilio.Rest.Api.V2010.Account
+  * Twilio.Rest.Api.V2010.Account.AvailablePhoneNumberCountry
 
 Implementations in other languages:
 
@@ -19,7 +24,7 @@ Implementations in other languages:
 
 ### How it works
 
-1. User who wants to start a donation center sends SMS message with `Start` to a designated Twilio number to start a Campaign
+1. User who wants to start a donation center sends SMS message with `Start` to a designated Twilio number to start a donation drive
 1. The application will respond back with address validation request and once the center address is validated the application sets up a new Twilio phone that the donation center coordinator can share for receving donated masks and also distributing masks 
 1. Donation centers are displayed real-time on Google map
 1. Donation center coordinator can text `Close` to stop the donation event  
